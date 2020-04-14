@@ -64,14 +64,6 @@ def precipitation():
     return jsonify(preciptations)
     
     session.close()
-    # ?? Do I have to close session in all functions
-    # session.close()
-    # return print(results)
-    # ?? Create a dictionary sqlalchemy document using .asdict() Not working
-    # ?? using print(dict(row)) This is the error TypeError: tuple indices must be integers or slices, not str
-    # for row in results:
-    #     return print(dict(row))
-
 
 @app.route("/api/v1.0/stations")
 def stations():
